@@ -99,7 +99,7 @@ class matrix:
 
     @staticmethod
     def multiply(m1, m2) -> 'matrix':
-        if m1.cols != m2.rows:
+        if m1.rows != m2.cols:
             print("Matrices can't be multiplied")
             return
         newMatrix = matrix(m1.rows, m2.cols)
