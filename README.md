@@ -1,2 +1,2 @@
 # Neural Network
- simple neural network from scratch with pytohn.
+ simple neural network from scratch with python.
