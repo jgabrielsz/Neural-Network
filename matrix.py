@@ -58,7 +58,7 @@ class matrix:
         for _ in range(self.rows):
             row = list()
             for _ in range(self.cols):
-                row.append(gauss(0, 1))
+                row.append(gauss(-0.01, 0.01))
                 #random positive number between 1 and 10
                 #row.append(random.randint(1, 10))
 
@@ -99,7 +99,7 @@ class matrix:
 
     @staticmethod
     def multiply(m1, m2) -> 'matrix':
-        if m1.rows != m2.cols:
+        if m1.cols != m2.rows:
             print("Matrices can't be multiplied")
             return
         newMatrix = matrix(m1.rows, m2.cols)
